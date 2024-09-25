@@ -7,6 +7,6 @@ public class helloWorld {
 
         System.out.println("Hello World!");
         System.out.println(name);
-        System.out.println(stdNum);
+        System.out.println(stdNum   );
     }
 }
