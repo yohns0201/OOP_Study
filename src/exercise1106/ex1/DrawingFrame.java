@@ -46,7 +46,5 @@ public class DrawingFrame {
         for(Crayon crayon : crayonList){
             f.drawingCrayon(crayon);
         }
-
-
     }
 }

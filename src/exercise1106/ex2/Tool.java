@@ -1,8 +1,8 @@
 package exercise1106.ex2;
 
 public abstract class Tool {
-    private String toolColor;
-    private int toolSize;
+    String toolColor;
+    int toolSize;
 
     public Tool(){
         this.toolSize = 1;

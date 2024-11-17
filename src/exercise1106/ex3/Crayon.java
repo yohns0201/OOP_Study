@@ -1,20 +1,36 @@
 package exercise1106.ex3;
 
 public class Crayon implements Tool {
-    private String toolColor;
     private int toolSize;
+    private String toolColor;
 
-    public Crayon(){
+    // 기본 생성자
+    public Crayon() {
         this.toolSize = 1;
         this.toolColor = "white";
     }
-    public Crayon(int size, String color){
-       this.toolSize = size;
-       this.toolColor = color;
+
+    // 매개변수 있는 생성자
+    public Crayon(int size, String color) {
+        this.toolSize = size;
+        this.toolColor = color;
     }
 
+    // draw 메서드 구현
     @Override
-    public void draw(){
-        System.out.println("Crayon drawing with "+toolColor+" color and "+toolSize+" size");
+    public void draw() {
+        System.out.println("Crayon drawing with " + getToolColor() + " color and " + getToolSize() + " size");
+    }
+
+    // getToolSize 메서드 구현
+    @Override
+    public int getToolSize() {
+        return toolSize;
+    }
+
+    // getToolColor 메서드 구현
+    @Override
+    public String getToolColor() {
+        return toolColor;
     }
 }

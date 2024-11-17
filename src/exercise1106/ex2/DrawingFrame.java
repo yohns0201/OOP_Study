@@ -30,6 +30,5 @@ public class DrawingFrame {
         for(Tool tool : toolList){
             f.drawingTool(tool);
         }
-
     }
 }
